@@ -1,0 +1,247 @@
+body {
+  background-image: linear-gradient(to left, gray,rgb(212, 109, 143)) ;
+  margin: 0%;
+  font-style: italic;
+  display: grid;
+  grid-template-columns: repeat(4, 2, 5fr);
+  grid-template-rows: repeat(4, 2, 5fr);
+  grid-template-areas:
+    "header header header header"
+    "contenido contenido contenido contenido"
+    "contenido contenido contenido contenido"
+    "footer footer footer footer";
+}
+.contenido {
+  padding: 10px;
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ul li {
+  display: inline-block;
+  background-color:pink;
+  padding: 15px 15px;
+  margin: 10px;
+  border-spacing: 60px;
+  border-style: solid;
+  border-color: grey;
+}
+header {
+  background-image: url(../Multimedia/cakelila.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  grid-area: header;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo {
+  width: 240px;
+  margin: 7px;
+  border-style:dashed;
+  border-color:palevioletred;
+}
+.titulos {
+  display: inline-block;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  text-align: center;
+  font-size: 75px;
+  color: black;
+  grid-area: titulos;
+  margin: 0%;
+}
+.tortas {
+  height: 500px;
+}
+.pan {
+  display: inline-block;
+  height: 250px;
+}
+.parrafocontacto {
+  font-family: Cambria;
+}
+.ubicacion {
+  width: 500px;
+}
+fieldset {
+  padding: 30px;
+}
+footer {
+  display: flex;
+  background-color: plum;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-area: footer;
+  align-items: center;
+}
+h2 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  text-align: center;
+  font-size: 45px;
+  color: black;
+  grid-area: titulos;
+  background-color: rgba(233, 169, 233, 0.781);
+  margin: 0%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-image: linear-gradient(to left, gray, pink);
+    margin: 0%;
+    font-style: italic;
+    display: grid;
+    grid-template-columns: repeat (3, 0,5fr);
+    grid-template-rows: repeat(4,0,5 fr);
+    grid-column-gap:0px;
+    grid-template-areas:
+      "header header header"
+      "contenido contenido contenido"
+      "contenido contenido contenido"
+      "footer footer footer";
+  }
+  .contenido {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  ul li {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 10px;
+    margin: 3px;
+    background-color:pink;
+    margin: 10px;
+    border-spacing: 40px;
+    border-style: solid;
+    border-color: plum;
+  }
+  header {
+    background-color: pink;
+    grid-area: header;
+    font-weight: bold;
+    font-family: "Segoe UI";
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .logo {
+    width: 170px;
+    padding: 20px;
+    border-style: dashed;
+    border-color: palevioletred;
+  }
+  .titulos {
+    display: inline-block;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    grid-area: titulos;
+    background-color: rgba(233, 169, 233, 0.781);
+    margin: 0%;
+    font-size:xx-large;
+  }
+  .tortas {
+    height: 350px;
+  }
+  .pan {
+    display: inline-block;
+    height: 200px;
+  }
+  .ubicacion {
+    width: 250px;
+  }
+  footer {
+    display: flex;
+    background-color: plum;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    grid-area: footer;
+  }
+  footer a img{
+    height: 50px;
+  }
+  h2 {
+    font-family: "Segoe UI";
+    font-weight: bold;
+    text-align: center;
+    font-size:x-large;
+    color: black;
+    grid-area: titulos;
+    background-color: rgba(233, 169, 233, 0.781);
+    margin: 0%;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: pink;
+    margin: 0%;
+    font-style: italic;
+    display: grid;
+    grid-template-columns: repeat(1, 0,5fr);
+    grid-template-rows: repeat(3,0,5fr);
+    grid-template-areas:
+      "header"
+      "contenido"
+      "footer";
+  }
+  .contenido {
+    grid-area: contenido;
+    background-image: linear-gradient( to left, aqua, gray);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgba(255, 192, 203, 0.89);
+    padding: 15px 15px;
+    margin: 5px;
+    border-spacing: 60px;
+  }
+  header {
+    background-color: palevioletred;
+    background-image: none;
+    grid-area: header;
+    font-weight: bold;
+    font-family: "Segoe UI";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    margin: 0%;
+    padding: 0%;
+    border: 3px;
+  }
+ 
+  .logo {
+    width: 150px;
+    border-style: dashed;
+    border-color: palevioletred;
+  }
+  .titulos{
+    font-size: x-large;
+  }
+  h3{
+    font-size: medium;
+  }
+  .tortas{
+    height: 270px;
+  }
+}
