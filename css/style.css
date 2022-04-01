@@ -2,22 +2,6 @@ body {
   background-image: linear-gradient(to left, gray,rgb(212, 109, 143)) ;
   margin: 0%;
   font-style: italic;
-  display: grid;
-  grid-template-columns: repeat(4, 2, 5fr);
-  grid-template-rows: repeat(4, 2, 5fr);
-  grid-template-areas:
-    "header header header header"
-    "contenido contenido contenido contenido"
-    "contenido contenido contenido contenido"
-    "footer footer footer footer";
-}
-.contenido {
-  padding: 10px;
-  grid-area: contenido;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 }
 ul li {
   display: inline-block;
@@ -32,7 +16,6 @@ header {
   background-image: url(../Multimedia/cakelila.jpg);
   background-repeat: repeat-x;
   background-size: contain;
-  grid-area: header;
   font-weight: bold;
   font-family: "Segoe UI";
   padding: 0px;
