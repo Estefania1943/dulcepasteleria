@@ -1,11 +1,18 @@
 body {
-  background-image: linear-gradient(to left, gray,rgb(212, 109, 143)) ;
+  background-image: linear-gradient(to left, gray, rgb(212, 109, 143));
   margin: 0%;
   font-style: italic;
 }
+.contenido {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: large;
+}
 ul li {
   display: inline-block;
-  background-color:pink;
+  background-color: pink;
   padding: 15px 15px;
   margin: 10px;
   border-spacing: 60px;
@@ -27,8 +34,8 @@ header {
 .logo {
   width: 240px;
   margin: 7px;
-  border-style:dashed;
-  border-color:palevioletred;
+  border-style: dashed;
+  border-color: palevioletred;
 }
 .titulos {
   display: inline-block;
@@ -39,6 +46,9 @@ header {
   color: black;
   grid-area: titulos;
   margin: 0%;
+}
+.fotos{
+  transform: rotate(12deg);
 }
 .tortas {
   height: 500px;
@@ -80,28 +90,22 @@ h2 {
     margin: 0%;
     font-style: italic;
     display: grid;
-    grid-template-columns: repeat (3, 0,5fr);
-    grid-template-rows: repeat(4,0,5 fr);
-    grid-column-gap:0px;
+    grid-template-columns: repeat (3, 0, 5fr);
+    grid-template-rows: repeat(4, 0, 5 fr);
+    grid-column-gap: 0px;
     grid-template-areas:
       "header header header"
       "contenido contenido contenido"
       "contenido contenido contenido"
       "footer footer footer";
   }
-  .contenido {
-    grid-area: contenido;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+
   ul li {
     display: inline-block;
     overflow: hidden;
     padding: 10px 10px;
     margin: 3px;
-    background-color:pink;
+    background-color: pink;
     margin: 10px;
     border-spacing: 40px;
     border-style: solid;
@@ -133,7 +137,7 @@ h2 {
     grid-area: titulos;
     background-color: rgba(233, 169, 233, 0.781);
     margin: 0%;
-    font-size:xx-large;
+    font-size: xx-large;
   }
   .tortas {
     height: 350px;
@@ -153,14 +157,14 @@ h2 {
     align-content: space-around;
     grid-area: footer;
   }
-  footer a img{
+  footer a img {
     height: 50px;
   }
   h2 {
     font-family: "Segoe UI";
     font-weight: bold;
     text-align: center;
-    font-size:x-large;
+    font-size: x-large;
     color: black;
     grid-area: titulos;
     background-color: rgba(233, 169, 233, 0.781);
@@ -173,8 +177,8 @@ h2 {
     margin: 0%;
     font-style: italic;
     display: grid;
-    grid-template-columns: repeat(1, 0,5fr);
-    grid-template-rows: repeat(3,0,5fr);
+    grid-template-columns: repeat(1, 0, 5fr);
+    grid-template-rows: repeat(3, 0, 5fr);
     grid-template-areas:
       "header"
       "contenido"
@@ -182,7 +186,7 @@ h2 {
   }
   .contenido {
     grid-area: contenido;
-    background-image: linear-gradient( to left, aqua, gray);
+    background-image: linear-gradient(to left, aqua, gray);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -212,19 +216,19 @@ h2 {
     padding: 0%;
     border: 3px;
   }
- 
+
   .logo {
     width: 150px;
     border-style: dashed;
     border-color: palevioletred;
   }
-  .titulos{
+  .titulos {
     font-size: x-large;
   }
-  h3{
+  h3 {
     font-size: medium;
   }
-  .tortas{
+  .tortas {
     height: 270px;
   }
 }
