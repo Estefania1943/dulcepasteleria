@@ -1,28 +1,22 @@
 body {
-  background-image: linear-gradient(to left, gray, rgb(212, 109, 143));
-  margin: 0%;
+  background-image: linear-gradient(to left, rgba(128, 0, 128, 0.879), rgb(199, 90, 199));
+  margin: 0px;
   font-style: italic;
 }
-.contenido {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  font-size: large;
-}
+
 ul li {
   display: inline-block;
-  background-color: pink;
+  background-color: white;
   padding: 15px 15px;
   margin: 10px;
   border-spacing: 60px;
   border-style: solid;
-  border-color: grey;
+  border-color: purple;
 }
 header {
-  background-image: url(../Multimedia/cakelila.jpg);
+  background-image: url(../Multimedia/cakerosa.jpg);
+  background-size: 230px;
   background-repeat: repeat-x;
-  background-size: contain;
   font-weight: bold;
   font-family: "Segoe UI";
   padding: 0px;
@@ -35,20 +29,16 @@ header {
   width: 240px;
   margin: 7px;
   border-style: dashed;
-  border-color: palevioletred;
+  border-color: purple;
 }
 .titulos {
-  display: inline-block;
+  display: inline;
   font-family: "Segoe UI";
   font-weight: bold;
-  text-align: center;
   font-size: 75px;
-  color: black;
+  color: white;
   grid-area: titulos;
   margin: 0%;
-}
-.fotos{
-  transform: rotate(12deg);
 }
 .tortas {
   height: 500px;
@@ -56,9 +46,6 @@ header {
 .pan {
   display: inline-block;
   height: 250px;
-}
-.parrafocontacto {
-  font-family: Cambria;
 }
 .ubicacion {
   width: 500px;
@@ -68,7 +55,7 @@ fieldset {
 }
 footer {
   display: flex;
-  background-color: plum;
+  background-color: palevioletred;
   flex-direction: column;
   flex-wrap: wrap;
   grid-area: footer;
@@ -79,14 +66,20 @@ h2 {
   font-weight: bold;
   text-align: center;
   font-size: 45px;
-  color: black;
+  color: white;
   grid-area: titulos;
-  background-color: rgba(233, 169, 233, 0.781);
+  background-color: palevioletred;
   margin: 0%;
+}
+h1, h3, h4, h5, p{
+  color: white;
+}
+main{
+  margin: 40px;
 }
 @media screen and (max-width: 768px) {
   body {
-    background-image: linear-gradient(to left, gray, pink);
+    background-image: linear-gradient(to left, rgba(128, 0, 128, 0.879), rgb(199, 90, 199));
     margin: 0%;
     font-style: italic;
     display: grid;
@@ -105,14 +98,14 @@ h2 {
     overflow: hidden;
     padding: 10px 10px;
     margin: 3px;
-    background-color: pink;
+    background-color: rgb(199, 162, 162);
     margin: 10px;
     border-spacing: 40px;
     border-style: solid;
-    border-color: plum;
+    border-color: purple;
   }
   header {
-    background-color: pink;
+    background-image: url(../Multimedia/cakerosa.jpg);
     grid-area: header;
     font-weight: bold;
     font-family: "Segoe UI";
@@ -133,9 +126,8 @@ h2 {
     font-family: "Segoe UI";
     font-weight: bold;
     text-align: center;
-    color: black;
+    color: white;
     grid-area: titulos;
-    background-color: rgba(233, 169, 233, 0.781);
     margin: 0%;
     font-size: xx-large;
   }
@@ -151,7 +143,7 @@ h2 {
   }
   footer {
     display: flex;
-    background-color: plum;
+    background-color:palevioletred;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
@@ -165,15 +157,18 @@ h2 {
     font-weight: bold;
     text-align: center;
     font-size: x-large;
-    color: black;
+    color: white;
     grid-area: titulos;
-    background-color: rgba(233, 169, 233, 0.781);
+    background-color: palevioletred;
     margin: 0%;
+  }
+  h1, h3, h4, h5, p{
+    color: white;
   }
 }
 @media screen and (max-width: 500px) {
   body {
-    background-color: pink;
+    background-color: purple;
     margin: 0%;
     font-style: italic;
     display: grid;
@@ -186,7 +181,7 @@ h2 {
   }
   .contenido {
     grid-area: contenido;
-    background-image: linear-gradient(to left, aqua, gray);
+    background-image: linear-gradient(to left,rgba(128, 0, 128, 0.879), rgb(199, 90, 199));
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -197,7 +192,7 @@ h2 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    background-color: rgba(255, 192, 203, 0.89);
+    background-color: white;
     padding: 15px 15px;
     margin: 5px;
     border-spacing: 60px;
@@ -220,7 +215,7 @@ h2 {
   .logo {
     width: 150px;
     border-style: dashed;
-    border-color: palevioletred;
+    border-color: purple;
   }
   .titulos {
     font-size: x-large;
@@ -230,5 +225,8 @@ h2 {
   }
   .tortas {
     height: 270px;
+  }
+  h1, h3, h4, h5, p{
+    color: white;
   }
 }
