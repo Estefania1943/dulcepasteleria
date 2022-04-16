@@ -47,9 +47,6 @@ header {
   grid-area: titulos;
   margin: 0%;
 }
-.fotos{
-  transform: rotate(12deg);
-}
 .tortas {
   height: 500px;
 }
